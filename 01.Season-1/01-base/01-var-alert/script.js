@@ -6,4 +6,6 @@
     console.log('Hello Woods programmer');
 
     // YOUR CODE HERE
+    let hello = "Hello, World!";
+    alert(hello);
 })();

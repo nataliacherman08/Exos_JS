@@ -7,5 +7,7 @@
     console.log('Hello Woods programmer');
 
     // YOUR CODE HERE
-})();
+    let name = prompt("What's your name?");
 
+    alert("Hello, " + name + "!");
+})();

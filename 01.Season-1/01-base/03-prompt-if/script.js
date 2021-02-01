@@ -7,5 +7,6 @@
   console.log('Hello Woods programmer');
 
   // YOUR CODE HERE
+  let cake = prompt("Do want some cake?");
 })();
 
