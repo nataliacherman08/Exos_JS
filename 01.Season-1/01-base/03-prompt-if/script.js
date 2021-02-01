@@ -8,5 +8,9 @@
 
   // YOUR CODE HERE
   let cake = prompt("Do want some cake?");
+  if (cake == "yes") {
+    alert("Congratulations!");
+  }    else {
+    alert(" More cake for me then :p !");
+  }
 })();
-
