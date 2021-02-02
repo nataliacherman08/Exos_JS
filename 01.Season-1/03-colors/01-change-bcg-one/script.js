@@ -8,28 +8,28 @@
     document.getElementById('red').onclick = bgRed;
 
     function bgRed() {
-        document.body.style.backgroundColor = "#bb010b";
+        document.body.style.backgroundColor = '#bb010b';
     }
 
     // background color green
     document.getElementById('green').onclick = bgGreen;
 
     function bgGreen() {
-        document.body.style.backgroundColor = "#02a570";
+        document.body.style.backgroundColor = '#02a570';
     }
 
     // background color yellow
     document.getElementById('yellow').onclick = bgYellow;
 
     function bgYellow() {
-        document.body.style.backgroundColor = "#ffdb58";
+        document.body.style.backgroundColor = '#ffdb58';
     }
 
     // background color blue
     document.getElementById('blue').onclick = bgBlue;
 
     function bgBlue() {
-        document.body.style.backgroundColor = "#005C96";
+        document.body.style.backgroundColor = '#005C96';
     }
 
 })();

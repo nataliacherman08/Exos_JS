@@ -7,9 +7,10 @@
   console.log('Hello Woods programmer');
 
   // YOUR CODE HERE
-  let cake = prompt("Do want some cake?");
-  if (cake == "yes") {
-    alert("Congratulations!");
+  let cake = prompt('Do want some cake ?');
+  if (cake == 'yes' | cake == 'yes, please' | cake == 'Yes' |
+  cake == 'Yes, please') {
+    alert("Congratulations !");
   }    else {
     alert(" More cake for me then :p !");
   }

@@ -11,18 +11,18 @@
     let gender = prompt("What's your gender ?");
     let town = prompt("In which town do you live ?");
 
-    alert("You are " + age + " years old ." +
-    "You are a " + gender + " ." +
-    "And you live in " + town + " .");
+    alert("You are " + age + " years old. " +
+    "You are a " + gender + ". " +
+    "And you live in " + town + ". ");
 
-    if(confirm("Is that you?")) {}
+    if(confirm("Is that you ?")) {}
     else {
         let age = prompt("How old are you ?");
         let gender = prompt("What's your gender ?");
         let town = prompt("In which town do you live ?");
 
-        alert("You are " + age + " years old ." +
-        "You are a " + gender + " ." +
-        "And you live in " + town + " .");
+        alert("You are " + age + " years old. " +
+        "You are a " + gender + ". " +
+        "And you live in " + town + ". ");
     }
 })();
