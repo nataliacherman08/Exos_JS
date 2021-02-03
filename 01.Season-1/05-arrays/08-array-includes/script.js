@@ -17,6 +17,12 @@
         "cherry",
     ];
 
-    // your code here
+    document.getElementById('run').addEventListener('click', () => {
+        if (fruits.includes("apple")) {
+            console.log("There is apple in the array fruits.");
+        } else {
+            console.log("There isn't appple in the array fruits.");
+        }
+    });
 
 })();
