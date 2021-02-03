@@ -14,8 +14,7 @@
 
     document.getElementById('run').addEventListener('click', () => {
 
-        let someone = new Person('Jarl', 'Balgruuf');
-        console.log(someone.sayHello());
+        console.log(new Person("Jarl", "Balgruuf").sayHello());
 
     });
 
