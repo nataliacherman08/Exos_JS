@@ -2,5 +2,8 @@
 
 
 (() => {
-    // your code here
+    document.getElementById('run').addEventListener('click', () => {
+        const Nat = { firstName: 'Nat', lastName: 'Cherman', age: '25', city: 'Mons', country: 'Belgium' };
+        console.log(Nat);
+    })
 })();
