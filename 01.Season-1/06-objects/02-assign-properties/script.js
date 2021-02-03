@@ -20,7 +20,8 @@
     };
 
     document.getElementById('run').addEventListener('click', () => {
-        console.log();
+        const obj = Object.assign(computers, defaultProps);
+        console.log(obj);
     });
 
 })();
