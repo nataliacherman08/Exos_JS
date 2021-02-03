@@ -14,5 +14,12 @@
         "Lucas",
     ]);
 
-    // your code here
+    document.getElementById('run').addEventListener('click', () => {
+        const nPeople = new Set(people);
+        console.log(nPeople.size)
+        if (nPeople.has('Alexandre')) {
+            console.log('Alexandre is a part of the Set.');
+        };
+    });
+
 })();
