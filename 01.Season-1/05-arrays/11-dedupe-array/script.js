@@ -20,6 +20,9 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById('run').addEventListener('click', () => {
+        let noDuplicate = new Set(fruits);
+        console.log(noDuplicate);
+    })
 
 })();
