@@ -6,7 +6,12 @@
 
     document.getElementById("run").addEventListener("click", () => {
 
-        // your code here
+        let numbers = document.getElementById('numbers');
+        let value = numbers.value;
+        let array = value.split(',');
+
+        array.sort(function (a, b) { return parseInt(a) - parseInt(b) });
+        alert(array);
 
     });
 
