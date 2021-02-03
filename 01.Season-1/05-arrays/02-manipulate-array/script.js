@@ -29,7 +29,7 @@
         fruits.push('kiwi');
 
         //SEE THE RESULT
-        alert(fruits);
+        console.log(fruits);
     })
 
 })();
