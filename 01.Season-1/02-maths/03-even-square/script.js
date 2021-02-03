@@ -6,7 +6,17 @@
 
     document.getElementById("run").addEventListener("click", () => {
 
-        // your code here
+        let x = 1;
+        let numbers = "";
+        
+        while ((x * x) < 21) {
+        let square = x * x;
+        x += 1;
+        
+        numbers = numbers + " , " + square;
+        }
+        
+        alert(numbers.substring(2));
 
     });
 
