@@ -23,6 +23,6 @@
     document.getElementById('run').addEventListener('click', () => {
         const noDuplicate = new Set(fruits);
         console.log(noDuplicate);
-    })
+    });
 
 })();
