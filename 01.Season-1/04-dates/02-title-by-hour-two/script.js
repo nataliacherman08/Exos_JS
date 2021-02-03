@@ -8,10 +8,10 @@
 
     let date = new Date();
     let hour = date.getHours();
-    let minute = date.getMinutes();
+    let minutes = date.getMinutes();
     
     if (hour <= 17) {
-        if (minute <= 30) {
+        if (minutes <= 30) {
             document.getElementById('target').innerHTML = 'Hello !';
         }
     }  else {

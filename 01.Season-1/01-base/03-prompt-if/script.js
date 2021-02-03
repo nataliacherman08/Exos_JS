@@ -8,10 +8,10 @@
 
   // YOUR CODE HERE
   let cake = prompt('Do want some cake ?');
-  if (cake == 'yes' | cake == 'yes, please' | cake == 'Yes' |
-  cake == 'Yes, please') {
-    alert("Congratulations !");
+  if (cake === 'yes' | cake === 'yes, please' | cake === 'Yes' |
+  cake === 'Yes, please' | cake === 'Of course') {
+    alert('Congratulations !');
   }    else {
-    alert(" More cake for me then :p !");
+    alert(' More cake for me then :p !');
   }
 })();
