@@ -21,7 +21,7 @@
     ];
 
     document.getElementById('run').addEventListener('click', () => {
-        let noDuplicate = new Set(fruits);
+        const noDuplicate = new Set(fruits);
         console.log(noDuplicate);
     })
 
