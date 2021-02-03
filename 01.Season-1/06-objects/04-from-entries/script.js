@@ -8,7 +8,6 @@
 
     // Not sure, will come back
     document.getElementById('run').addEventListener('click', () => {
-
         const entries = new Map([
             ["name", "species", "age", "gender", "color"], ["Skitty", "cat", "9", "female", "tabby"]
         ]);
