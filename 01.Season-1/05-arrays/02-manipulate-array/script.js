@@ -15,6 +15,21 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById('run').addEventListener('click', () => {
+        //delete first element
+        fruits.shift();
+
+        //delete last element
+        fruits.pop();
+
+        //add first element
+        fruits.unshift('banana');
+
+        //add last element
+        fruits.push('kiwi');
+
+        //SEE THE RESULT
+        alert(fruits);
+    })
 
 })();
