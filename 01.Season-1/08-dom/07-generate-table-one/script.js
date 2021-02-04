@@ -17,11 +17,5 @@
         let column = document.createElement('td');
         document.getElementById('myRow').appendChild(column);
     }
-    /*
-      for (i = 0; i < 10; i++) {
-          let cols = document.createElement("td");
-          let text = document.createTextNode("cell");
-          cols.appendChild(text);
-          document.getElementById("myTr").appendChild(cols);
-      }*/
+
 })();
