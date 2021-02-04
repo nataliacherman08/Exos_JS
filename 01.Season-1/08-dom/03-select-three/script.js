@@ -3,6 +3,10 @@
 
 (() => {
 
-    // your code here
+    let own = document.getElementsByClassName('target');
+
+    for (i = 0; i < own.length; i++) {
+        own[i].innerHTML = 'owned.';
+    }
 
 })();
