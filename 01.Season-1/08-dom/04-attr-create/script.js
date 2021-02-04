@@ -14,6 +14,8 @@
     document.getElementById('target').innerHTML = `<img src=${data} />`;
 
     //Remove the original element : parent.removeChild(child); (Not sure about this part.)
-    material.removeChild(target);
+    //There are also two different ways to do that : child.parentNode.removeChild(child);
+    //It would look like that : 'target'.parentNode.removeChild('target'); (But still not sure.)
+    'material'.removeChild('target');
 
 })();
