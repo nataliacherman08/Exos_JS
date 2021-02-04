@@ -16,4 +16,5 @@
     let column = document.createElement('td');
     document.getElementById('myRow').appendChild(column);
 
+
 })();

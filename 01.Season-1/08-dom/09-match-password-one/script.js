@@ -3,6 +3,15 @@
 
 (() => {
 
-    // your code here
+    document.getElementById('run').addEventListener('click', () => {
+
+        let passwordOne = document.getElementById('pass-one');
+        let passwordTwo = document.getElementById('pass-two');
+
+        if (passwordOne.value !== passwordTwo.value) {
+            passwordOne.setAttribute('style', 'border-color:red');
+            passwordTwo.setAttribute('style', 'border-color:red');
+        }
+    })
 
 })();
