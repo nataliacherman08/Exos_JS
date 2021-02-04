@@ -12,6 +12,6 @@
             passwordOne.setAttribute('style', 'border-color:red');
             passwordTwo.setAttribute('style', 'border-color:red');
         }
-    })
+    });
 
 })();
