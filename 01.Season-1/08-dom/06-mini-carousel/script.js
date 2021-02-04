@@ -27,9 +27,7 @@
         initialImage++;
 
         if (initialImage === gallery.length) {
-            gallery.forEach(element => {
-                initialImage = 0;
-            });
+            initialImage = 0;
         }
     });
 
