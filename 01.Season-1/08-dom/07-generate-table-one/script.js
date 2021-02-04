@@ -7,15 +7,21 @@
     table.setAttribute('id', 'myTable');
     document.getElementById('target').appendChild(table);
 
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < 1; i++) {
         let row = document.createElement('tr');
         row.setAttribute('id', 'myRow');
         document.getElementById('myTable').appendChild(row);
     }
 
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < 1; i++) {
         let column = document.createElement('td');
         document.getElementById('myRow').appendChild(column);
     }
-
+    /*
+      for (i = 0; i < 10; i++) {
+          let cols = document.createElement("td");
+          let text = document.createTextNode("cell");
+          cols.appendChild(text);
+          document.getElementById("myTr").appendChild(cols);
+      }*/
 })();
