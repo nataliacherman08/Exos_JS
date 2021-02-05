@@ -6,19 +6,14 @@
     let target = document.getElementById('target');
     let visitCount = localStorage.getItem('counter');
 
-    if (visitCount === undefined) {
-        visitCount = 0;
-    }
-
-    target.innerHTML = `Nombre de visites : ${visitCount}`;
-
     document.getElementById('increment').addEventListener('click', () => {
         visitCount++;
         localStorage.setItem('counter', visitCount);
-        target.innerHTML = `Nombre de visites : ${visitCount}`;
+        target.innerHTML = `Number of click : ${visitCount}`;
 
     });
 
+    //With w3school:
     /*function counter() {
         if (typeof (Storage) !== 'undefined') {
             if (localStorage.clickcount) {
