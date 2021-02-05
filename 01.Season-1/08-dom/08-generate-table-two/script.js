@@ -15,9 +15,9 @@
             let column = document.createElement('td');
             row.appendChild(column);
 
-            //didn't find
-            let text = document.createTextNode(1 * 10);
+            let text = document.createTextNode('');
             column.appendChild(text);
+
         }
     }
 
