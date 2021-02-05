@@ -4,17 +4,18 @@
 (() => {
 
     let table = document.createElement('table');
-    table.setAttribute('id', 'myTable');
+    table.setAttribute('id', 'myTab');
+
     document.getElementById('target').appendChild(table);
 
     for (i = 0; i < 10; i++) {
         let row = document.createElement('tr');
-        row.setAttribute('id', 'myRow');
-        document.getElementById('myTable').appendChild(row);
+        document.getElementById('myTab').appendChild(row);
+
+        for (e = 0; e < 1; e++) {
+            let column = document.createElement('td');
+            row.appendChild(column);
+        }
     }
-
-    let column = document.createElement('td');
-    document.getElementById('myRow').appendChild(column);
-
 
 })();
