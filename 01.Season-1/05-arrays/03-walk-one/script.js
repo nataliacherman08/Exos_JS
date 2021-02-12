@@ -19,7 +19,11 @@
     ];
 
     document.getElementById('run').addEventListener('click', () => {
-        for (let i = 0 ; i < fruits.length ; i ++) {
+        /*for (fruit of fruits) {
+            console.log(fruit);
+        }*/
+        //or 
+        for (i in fruits) {
             console.log(fruits[i]);
         }
     });
