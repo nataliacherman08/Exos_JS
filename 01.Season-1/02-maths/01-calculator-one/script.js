@@ -5,6 +5,8 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     //1) Addition
+    //parseInt (ensures that the value entered by the user is a number)
+    //.value (transforms the input into a usable value for the operation)
     document.getElementById("addition").addEventListener("click", () => {
         let a = parseInt(document.getElementById("op-one").value);
         let b = parseInt(document.getElementById("op-two").value);
