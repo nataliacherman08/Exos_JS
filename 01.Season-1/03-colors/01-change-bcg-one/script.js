@@ -4,32 +4,36 @@
 
 (() => {
 
-    // background color red
-    document.getElementById('red').onclick = bgRed;
+    //Red color background
+    document.getElementById("red").onclick = redBackground;
 
-    function bgRed() {
-        document.body.style.backgroundColor = '#bb010b';
+    function redBackground() {
+        document.body.style.backgroundColor = "#bb010b";
     }
 
-    // background color green
-    document.getElementById('green').onclick = bgGreen;
 
-    function bgGreen() {
-        document.body.style.backgroundColor = '#02a570';
+    //Green color background
+    document.getElementById("green").onclick = greenBackground;
+
+    function greenBackground() {
+        document.body.style.backgroundColor = "#02a570";
     }
 
-    // background color yellow
-    document.getElementById('yellow').onclick = bgYellow;
 
-    function bgYellow() {
-        document.body.style.backgroundColor = '#ffdb58';
+    //Yellow color background
+    document.getElementById("yellow").onclick = yellowBackground;
+
+    function yellowBackground() {
+        document.body.style.backgroundColor = "#f1c500";
     }
 
-    // background color blue
-    document.getElementById('blue').onclick = bgBlue;
 
-    function bgBlue() {
-        document.body.style.backgroundColor = '#005C96';
+    //Blue color background
+    document.getElementById("blue").onclick = blueBackground;
+
+    function blueBackground() {
+        document.body.style.backgroundColor = "#47c3e3";
     }
+
 
 })();
