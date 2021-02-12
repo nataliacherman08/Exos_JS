@@ -4,7 +4,6 @@
 
 (() => {
 
-
     document.getElementById("run").addEventListener("click", () => {
 
         let dayOfBirth = document.getElementById("dob-day").value;
