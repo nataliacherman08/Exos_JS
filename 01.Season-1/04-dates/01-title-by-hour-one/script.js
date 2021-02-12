@@ -5,7 +5,6 @@
 (() => {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
     let hour = new Date();
 
     if (hour.getHours() < 18) {
