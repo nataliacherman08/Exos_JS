@@ -22,7 +22,9 @@
 
         //Syntax: arr.sort(fonctionComparaison(a, b))
         //parseInt() is to indicate that the value is a number
-        arrayOfNumbers.sort(function (a, b) { return parseInt(a) - parseInt(b) });
+        arrayOfNumbers.sort(function (a, b) {
+            return parseInt(a) - parseInt(b)
+        });
 
         alert(arrayOfNumbers);
 
