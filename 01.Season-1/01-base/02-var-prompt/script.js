@@ -6,8 +6,8 @@
     console.log('%c ', 'padding: 38px; background:url(https://becode.org/app/uploads/2020/03/bc_mailsign_seal.png) no-repeat;');
     console.log('Hello Woods programmer');
 
-    // YOUR CODE HERE
-    let name = prompt("What's your name ?");
-
-    alert("Hello, " + name + " !");
+    //1) Ask the name of the user
+    let name = prompt("What's your name?");
+    //2) Display it in a dialog box with a welcome message
+    alert(`Hello ${name} !`);
 })();
