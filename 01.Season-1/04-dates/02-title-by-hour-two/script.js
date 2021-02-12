@@ -5,16 +5,17 @@
 (() => {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    let time = new Date();
 
-    let date = new Date();
-    let hour = date.getHours();
-    let minutes = date.getMinutes();
-    
+    let hour = time.getHours();
+    let minutes = time.getMinutes();
+
     if (hour <= 17) {
         if (minutes <= 30) {
-            document.getElementById('target').innerHTML = 'Hello !';
+            document.getElementById("target").innerHTML = "Hello";
         }
-    }  else {
-          document.getElementById('target').innerHTML = 'Good evening !';
-        }
+    } else {
+        document.getElementById("target").innerHTML = "Good evening";
+    }
+
 })();
