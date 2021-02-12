@@ -15,21 +15,15 @@
         "cerise",
     ];
 
-    document.getElementById('run').addEventListener('click', () => {
-        //delete first element
-        fruits.shift();
+    document.getElementById("run").addEventListener("click", () => {
 
-        //delete last element
-        fruits.pop();
+        fruits.pop(); //Delete the last element of the array
+        fruits.shift(); //Delete the first element of the array
+        fruits.unshift("banana"); //Add an element at the start of the array
+        fruits.push("kiwi"); //Add an element at the end of the array
 
-        //add first element
-        fruits.unshift('banana');
-
-        //add last element
-        fruits.push('kiwi');
-
-        //SEE THE RESULT
         console.log(fruits);
-    })
+    });
+
 
 })();
