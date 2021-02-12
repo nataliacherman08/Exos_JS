@@ -16,7 +16,6 @@
         while ((n * n) < 21) { //If we put just "n" it won't be between 1 and 21
             let operation = n * n;
             n += 1;
-
             results += `${operation}  `;
         }
 
