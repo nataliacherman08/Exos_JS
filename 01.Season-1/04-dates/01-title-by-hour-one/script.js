@@ -6,12 +6,12 @@
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    let date = new Date();
+    let hour = new Date();
 
-    if (date.getHours() < 18) {
-        document.getElementById('target').innerHTML = "Hello !";
+    if (hour.getHours() < 18) {
+        document.getElementById('target').innerHTML = "Hello";
     } else {
-        document.getElementById('target').innerHTML = "Good Evening !";
+        document.getElementById('target').innerHTML = "Good Evening";
     }
 
 })();
