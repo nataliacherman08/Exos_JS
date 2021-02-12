@@ -46,4 +46,12 @@
         )
         );
     //* It's the same as if you made, document.getElementById (4 times for the operators) but summarized
+    //When the event occurs, an event object is passed to the function as the first parameter.
+    //The type of the event object depends on the specified event.
+
+    //Optional. A Boolean value that specifies whether the event should be executed in the capturing or in the bubbling phase.
+    //Possible values:
+    //true - The event handler is executed in the capturing phase
+    //false- Default. The event handler is executed in the bubbling phase
+    //In this case, I didn't add this optional value. (false)
 })();
