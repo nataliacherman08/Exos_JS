@@ -13,7 +13,7 @@
         //Create an array from this numbers with a value
         //The split() method divides a string from a separator
         // to provide an array of sub-strings.
-        let arrayOfNumbers = valueOfNumbers.split(' ,');
+        let arrayOfNumbers = valueOfNumbers.split(',');
 
 
         //The sort() method sorts the elements of an array, in the same array, and returns the array.
