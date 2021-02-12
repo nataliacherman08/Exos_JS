@@ -9,6 +9,7 @@
         let numbers = document.getElementById('numbers');
         //Attribuate to this numbers a value so we can sort it
         let valueOfNumbers = numbers.value;
+
         //Create an array from this numbers with a value
         //The split() method divides a string from a separator
         // to provide an array of sub-strings.
@@ -20,6 +21,7 @@
         //sorted according to the values of UTF-16 code units of characters.
 
         //Syntax: arr.sort(fonctionComparaison(a, b))
+        //parseInt() is to indicate that the value is a number
         arrayOfNumbers.sort(function (a, b) { return parseInt(a) - parseInt(b) });
 
         alert(arrayOfNumbers);
