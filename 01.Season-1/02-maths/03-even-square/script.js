@@ -10,7 +10,7 @@
         let n = 1;
 
         //Results of this operation
-        let results = [];
+        let results = "";
 
         //Perform the calculation as long as it is less than 21
         while ((n * n) < 21) { //If we put just "n" it won't be between 1 and 21
