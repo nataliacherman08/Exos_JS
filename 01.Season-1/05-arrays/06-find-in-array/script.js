@@ -80,6 +80,7 @@
         },
     ];
 
+
     document.getElementById("run").addEventListener("click", () => {
 
         people.forEach(person => {
@@ -88,6 +89,7 @@
                 console.log(people.indexOf(person));
             }
         })
+
     });
 
 })();
