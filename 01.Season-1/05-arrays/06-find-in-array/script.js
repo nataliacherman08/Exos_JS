@@ -80,12 +80,14 @@
         },
     ];
 
-    document.getElementById('run').addEventListener('click', () => {
-        people.forEach(element => {
-            if (element.firstname === 'Jean' & element.lastname === 'Dupont') {
-                console.log(element.email);
-                console.log(people.indexOf(element));
+    document.getElementById("run").addEventListener("click", () => {
+
+        people.forEach(person => {
+            if ((person.firstname == "Jean") && (person.lastname == "Dupont")) {
+                console.log(person.email);
+                console.log(people.indexOf(person));
             }
         })
     });
+
 })();
