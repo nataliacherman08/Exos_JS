@@ -16,6 +16,11 @@
         document.getElementById("min").innerHTML = Math.min(...arrayOfTenNumbers);
         document.getElementById("max").innerHTML = Math.max(...arrayOfTenNumbers);
 
+        //3) Display the sum of this numbers
+        document.getElementById("sum").innerHTML = arrayOfTenNumbers.reduce((a, b) => a + b);
+
+        //4) Display the average
+        document.getElementById("average").innerHTML = arrayOfTenNumbers.reduce((a, b) => a + b) / arrayOfTenNumbers.length;
     });
 
 })();
