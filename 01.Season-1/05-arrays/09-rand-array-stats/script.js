@@ -12,6 +12,10 @@
             document.getElementById("n-" + i).innerHTML = arrayOfTenNumbers[arrayOfTenNumbers.length - 1];
         }
 
+        //2) Display the smallest number, the biggest number
+        document.getElementById("min").innerHTML = Math.min(...arrayOfTenNumbers);
+        document.getElementById("max").innerHTML = Math.max(...arrayOfTenNumbers);
+
     });
 
 })();
