@@ -80,9 +80,12 @@
         },
     ];
 
-    document.getElementById('run').addEventListener('click', () => {
-        const newArray = people.filter(people => people.age > 18);
-        console.log(newArray);
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        let newArrayOfPeople = people.filter(person => person.age > 18);
+        console.log(newArrayOfPeople);
+
     });
 
 })();
