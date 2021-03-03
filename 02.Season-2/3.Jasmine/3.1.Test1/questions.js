@@ -51,8 +51,8 @@ let IsString = (texte) => {
 }
 
 let AfficherExtensionString = (texte) => {
-    let lastindexof = texte.lastIndexOf('.');
-    return texte.substr(lastindexof + 1);
+    let extension = texte.lastIndexOf('.');
+    return texte.substr(extension + 1);
 }
 
 let NombreEspaceString = (texte) => {
