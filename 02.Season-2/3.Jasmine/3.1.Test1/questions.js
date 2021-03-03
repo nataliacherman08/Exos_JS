@@ -63,8 +63,7 @@ let InverseString = (texte) => {
     return texte.split("").reverse().join("");
 }
 
-/*
--------------------------------------- Exercices sur les nombres et les caluls mathématiques ------------------------------------------------------*/
+//------------------------------------- Exercices sur les nombres et les caluls mathématiques ------------------------------------------------------*/
 
 let calculPuissance = (x, y) => {
     return Math.pow(x, y);
