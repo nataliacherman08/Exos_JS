@@ -1,85 +1,129 @@
+//It selects elements starting with A
 let selectElementsStartingWithA = (array) => {
-    return 'Write your method here';
+    let arr = [];
+    array.forEach(e => {
+        if (e.startsWith("a")) {
+            arr.push(e);
+        }
+    });
+    return arr;
 }
 
+//It selects elements starting with a vowel
 let selectElementsStartingWithVowel = (array) => {
-    return 'Write your method here';
 }
 
+//It removes null values from an array
 let removeNullElements = (array) => {
-    return 'Write your method here';
 }
 
+//It removes null and false values from an array
 let removeNullAndFalseElements = (array) => {
-    return 'Write your method here';
 }
 
+//It reverses the letters of each element in an array
 let reverseWordsInArray = (array) => {
-    return 'Write your method here';
+    let arr = []
+    array.forEach(e => {
+        arr.push(e.split("").reverse().join(""));
+    })
+    return arr;
 }
 
+
+//It makes every possible pairing of students
 let everyPossiblePair = (array) => {
-    return 'Write your method here';
 }
 
+
+//It takes all elements except the first 3
 let allElementsExceptFirstThree = (array) => {
-    return 'Write your method here';
+    array.splice(0, 3);
+    return array;
 }
 
+
+//It adds an element to the beginning of an array
 let addElementToBeginning = (array, element) => {
-    return 'Write your method here';
+    array.unshift(element);
+    return array;
 }
 
+
+//It sorts an array by the last letter of each word
 let sortByLastLetter = (array) => {
-    return 'Write your method here';
+    return array.sort(
+        (a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1)
+    );
 }
 
+
+//It gets the first half of a string
 let getFirstHalf = (string) => {
-    return 'Write your method here';
+    return string.substr(0, Math.round(string.length / 2));
 }
 
+
+//It makes numbers negative
 let makeNegative = (number) => {
-    return 'Write your method here';
+    return -Math.abs(number);
 }
 
+//It counts elements in an array that are palindromes
 let numberOfPalindromes = (array) => {
-    return 'Write your method here';
 }
 
+
+//It returns the shortest word in an array
 let shortestWord = (array) => {
-    return 'Write your method here';
 }
 
+
+//It returns the longest word in an array
 let longestWord = (array) => {
-    return 'Write your method here';
 }
 
+
+//It sums up the numbers in an array
 let sumNumbers = (array) => {
-    return 'Write your method here';
+    return array.reduce((a, b) => a + b);
 }
 
+
+//It repeats the elements of an array
 let repeatElements = (array) => {
-    return 'Write your method here';
 }
 
+
+//It turns a number string into a number
 let stringToNumber = (string) => {
-    return 'Write your method here';
+    return parseInt(string);
 }
 
+
+//It calculates the average of an array of numbers
 let calculateAverage = (array) => {
-    return 'Write your method here';
+    return array.reduce((a, b) => a + b) / array.length;
 }
 
+
+//It gets elements until greater than five
 let getElementsUntilGreaterThanFive = (array) => {
-    return 'Write your method here';
+    arr = []
+    for (let i = 0; i <= 5; i++) {
+        arr.push(array[i]);
+    }
+    return arr;
 }
 
+
+//It converts an array to an object
 let convertArrayToObject = (array) => {
-    return 'Write your method here';
 }
 
+
+//It gets all letters in an array of words
 let getAllLetters = (array) => {
-    return 'Write your method here';
 }
 
 let swapKeysAndValues = (object) => {
@@ -90,46 +134,77 @@ let sumKeysAndValues = (object) => {
     return 'Write your method here';
 }
 
+
+//It removes capital letters from a string
 let removeCapitals = (string) => {
-    return 'Write your method here';
+    let lowercaseString = string.replace(/[A-Z]/g, '');
+    return lowercaseString;
 }
 
+
+//It rounds up a number
 let roundUp = (number) => {
-    return 'Write your method here';
+    return Math.ceil(number);
 }
 
+
+//It formats a date nicely
 let formatDateNicely = (date) => {
-    return 'Write your method here';
+    let niceFormatDate = date.toLocaleString("fr-Fr", {
+        month: "numeric",
+        day: "numeric",
+        year: "numeric",
+    })
+    console.log(niceFormatDate);
+    return niceFormatDate;
 }
+
+
 
 let getDomainName = (string) => {
     return 'Write your method here';
 }
 
+
+//It titleizes a string
 let titleize = (string) => {
-    return 'Write your method here';
 }
 
+
+//It checks a string for special characters
 let checkForSpecialCharacters = (string) => {
-    return 'Write your method here';
+    let format = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+    return format.test(string);
 }
 
+
+//It finds the square root of a number
 let squareRoot = (number) => {
-    return 'Write your method here';
+    return Math.sqrt(number);
 }
 
+
+//It finds the factorial of a number
 let factorial = (number) => {
-    return 'Write your method here';
+    let f = 1;
+    for (let i = 1; i <= number; i++) {
+        f = f * i
+    }
+    return f;
 }
 
+
+//It finds all possible anagrams of a word
 let findAnagrams = (string) => {
-    return 'Write your method here';
+
 }
 
+//It converts Fahrenheit to Celsius rounding to the nearest integer
 let convertToCelsius = (number) => {
-    return 'Write your method here';
+    return Math.round((number - 32) * 5 / 9);
 }
 
+//It changes each letter of an array into its position in the alphabet
 let letterPosition = (array) => {
-    return 'Write your method here';
+    return array.map((e) => e.toUpperCase().charCodeAt(0) - 64);
 }
