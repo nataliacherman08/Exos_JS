@@ -1,4 +1,4 @@
-# Exos_JS_Saison1
+# Exos_JS
 ## Content
 In this repository, you will find all the JS exercices proposed by BeCode.
 
