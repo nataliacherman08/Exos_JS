@@ -12,7 +12,7 @@ let selectElementsStartingWithA = (array) => {
 
 //It selects elements starting with a vowel
 let selectElementsStartingWithVowel = (array) => {
-    let vowels = "aeiou"; //Declare vowels
+    /*let vowels = "aeiou"; //Declare vowels
     let arr = [];
     array.forEach(e => {
         //Check if elements from "array" start with vowel from "vowels"
@@ -22,7 +22,10 @@ let selectElementsStartingWithVowel = (array) => {
             }
         }
     });
-    return arr;
+    return arr;*/
+
+    let vowel = array.filter(str => /^[aeiou]/i.test(str));
+    return vowel;
 }
 
 
@@ -57,6 +60,14 @@ let reverseWordsInArray = (array) => {
 
 //It makes every possible pairing of students
 let everyPossiblePair = (array) => {
+    /*let results = [];
+    for (let i = 0; i < array.length - 1; i++) {
+        for (let j = i + 1; j < array.length; j++) {
+            results.push(array[i] + ' ' + array[j]);
+        }
+    }
+
+    console.log(results);*/
 }
 
 
@@ -100,6 +111,12 @@ let numberOfPalindromes = (array) => {
 
 //It returns the shortest word in an array
 let shortestWord = (array) => {
+    let teststring = "tttttttttttttttttttttt";
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].length < teststring.length)
+            teststring = array[i]
+    }
+    return teststring;
 }
 
 
