@@ -9,8 +9,20 @@ let selectElementsStartingWithA = (array) => {
     return arr;
 }
 
+
 //It selects elements starting with a vowel
 let selectElementsStartingWithVowel = (array) => {
+    let vowels = "aeiou"; //Declare vowels
+    let arr = [];
+    array.forEach(e => {
+        //Check if elements from "array" start with vowel from "vowels"
+        for (let i = 0; i < vowels.length; i++) {
+            if (e[0] == vowels[i]) {
+                arr.push(e);
+            }
+        }
+    });
+    return arr;
 }
 
 //It removes null values from an array
