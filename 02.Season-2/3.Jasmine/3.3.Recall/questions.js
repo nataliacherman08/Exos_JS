@@ -65,7 +65,7 @@ let reverseWordsInArray = (array) => {
 }
 
 
-//It makes every possible pairing of students
+//6) It makes every possible pairing of students
 let everyPossiblePair = (array) => {
     /*let results = [];
     for (let i = 0; i < array.length - 1; i++) {
@@ -77,7 +77,7 @@ let everyPossiblePair = (array) => {
 }
 
 
-//It takes all elements except the first 3
+//7) It takes all elements except the first 3
 let allElementsExceptFirstThree = (array) => {
     /*array.shift();
     array.shift();
@@ -90,14 +90,14 @@ let allElementsExceptFirstThree = (array) => {
 
 
 
-//It adds an element to the beginning of an array
+//8) It adds an element to the beginning of an array
 let addElementToBeginning = (array, element) => {
     array.unshift(element);
     return array;
 }
 
 
-//It sorts an array by the last letter of each word
+//9) It sorts an array by the last letter of each word
 let sortByLastLetter = (array) => {
     return array.sort(
         (a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1)
@@ -105,7 +105,7 @@ let sortByLastLetter = (array) => {
 }
 
 
-//It gets the first half of a string
+//10) It gets the first half of a string
 let getFirstHalf = (string) => {
     //.substr(début[, longueur])
     //The substr() method returns a portion of the string, starting at the 
@@ -114,13 +114,13 @@ let getFirstHalf = (string) => {
 }
 
 
-//It makes numbers negative
+//11) It makes numbers negative
 let makeNegative = (number) => {
     return -Math.abs(number);
 }
 
 
-//It counts elements in an array that are palindromes
+//12) It counts elements in an array that are palindromes
 let numberOfPalindromes = (array) => {
     let numberOfPalindromes = 0;
     array.forEach(e => {
@@ -132,28 +132,32 @@ let numberOfPalindromes = (array) => {
 }
 
 
-//It returns the shortest word in an array
+//13) It returns the shortest word in an array
 let shortestWord = (array) => {
 }
 
 
-//It returns the longest word in an array
+//14) It returns the longest word in an array
 let longestWord = (array) => {
 }
 
 
-//It sums up the numbers in an array
+//15) It sums up the numbers in an array
 let sumNumbers = (array) => {
     return array.reduce((a, b) => a + b);
 }
 
 
-//It repeats the elements of an array
+//16) It repeats the elements of an array
 let repeatElements = (array) => {
+    array.forEach(e => {
+        array.push(e);
+    })
+    return array;
 }
 
 
-//It turns a number string into a number
+//17) It turns a number string into a number
 let stringToNumber = (string) => {
     return parseInt(string);
 }
