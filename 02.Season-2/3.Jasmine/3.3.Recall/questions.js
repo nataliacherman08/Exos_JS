@@ -25,8 +25,14 @@ let selectElementsStartingWithVowel = (array) => {
     return arr;
 }
 
+
 //It removes null values from an array
 let removeNullElements = (array) => {
+    let filtered = array.filter((e) => {
+        return e != null;
+    });
+
+    return filtered;
 }
 
 //It removes null and false values from an array
