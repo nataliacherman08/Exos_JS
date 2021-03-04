@@ -119,8 +119,16 @@ let makeNegative = (number) => {
     return -Math.abs(number);
 }
 
+
 //It counts elements in an array that are palindromes
 let numberOfPalindromes = (array) => {
+    let numberOfPalindromes = 0;
+    array.forEach(e => {
+        if (e.split("").reverse().join("") == e) {
+            numberOfPalindromes += 1;
+        }
+    });
+    return numberOfPalindromes;
 }
 
 
