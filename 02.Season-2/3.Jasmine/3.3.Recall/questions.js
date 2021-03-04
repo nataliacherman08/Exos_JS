@@ -152,7 +152,7 @@ let sumNumbers = (array) => {
 let repeatElements = (array) => {
     array.forEach(e => {
         array.push(e);
-    })
+    });
     return array;
 }
 
@@ -163,23 +163,24 @@ let stringToNumber = (string) => {
 }
 
 
-//It calculates the average of an array of numbers
+//18) It calculates the average of an array of numbers
 let calculateAverage = (array) => {
     return array.reduce((a, b) => a + b) / array.length;
 }
 
 
-//It gets elements until greater than five
+//19) It gets elements until greater than five
 let getElementsUntilGreaterThanFive = (array) => {
-    arr = []
-    for (let i = 0; i <= 5; i++) {
+    let arr = [];
+    /*for (let i = 0; i <= 5; i++) {
         arr.push(array[i]);
-    }
+    };*/
+    arr = array.splice(0, 6);
     return arr;
 }
 
 
-//It converts an array to an object
+//20) It converts an array to an object
 let convertArrayToObject = (array) => {
 }
 
