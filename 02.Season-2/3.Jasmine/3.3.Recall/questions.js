@@ -1,4 +1,4 @@
-//It selects elements starting with A
+//1) It selects elements starting with A
 let selectElementsStartingWithA = (array) => {
     let arr = [];
     array.forEach(e => {
@@ -10,7 +10,7 @@ let selectElementsStartingWithA = (array) => {
 }
 
 
-//It selects elements starting with a vowel
+//2) It selects elements starting with a vowel
 let selectElementsStartingWithVowel = (array) => {
     /*let vowels = "aeiou"; //Declare vowels
     let arr = [];
@@ -29,7 +29,7 @@ let selectElementsStartingWithVowel = (array) => {
 }
 
 
-//It removes null values from an array
+//3) It removes null values from an array
 let removeNullElements = (array) => {
     /*let filtered = array.filter((e) => {
         return e != null;
@@ -41,7 +41,7 @@ let removeNullElements = (array) => {
 }
 
 
-//It removes null and false values from an array
+//4) It removes null and false values from an array
 let removeNullAndFalseElements = (array) => {
     /*return array.filter((e) => {
         //Return only elements that are equal to 0 or the element itself
@@ -52,15 +52,15 @@ let removeNullAndFalseElements = (array) => {
 }
 
 
-//It reverses the letters of each element in an array
+//5) It reverses the letters of each element in an array
 let reverseWordsInArray = (array) => {
-    let arr = []
+    let arr = [];
     array.forEach(e => {
         arr.push(
             e.split("")//We split elements
                 .reverse()//We reverse elements
                 .join(""));//And rejoin elements
-    })
+    });
     return arr;
 }
 
