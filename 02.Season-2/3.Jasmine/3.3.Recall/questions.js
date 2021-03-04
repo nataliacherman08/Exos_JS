@@ -31,10 +31,12 @@ let selectElementsStartingWithVowel = (array) => {
 
 //It removes null values from an array
 let removeNullElements = (array) => {
-    let filtered = array.filter((e) => {
+    /*let filtered = array.filter((e) => {
         return e != null;
     });
 
+    return filtered;*/
+    let filtered = array.filter(e => e != null);
     return filtered;
 }
 
