@@ -79,9 +79,15 @@ let everyPossiblePair = (array) => {
 
 //It takes all elements except the first 3
 let allElementsExceptFirstThree = (array) => {
-    array.splice(0, 3);
+    /*array.shift();
+    array.shift();
+    array.shift();
+    return array;*/
+
+    array.splice(0, 3);//splice(index, numberOfElements)
     return array;
 }
+
 
 
 //It adds an element to the beginning of an array
