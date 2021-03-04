@@ -134,12 +134,6 @@ let numberOfPalindromes = (array) => {
 
 //It returns the shortest word in an array
 let shortestWord = (array) => {
-    let teststring = "tttttttttttttttttttttt";
-    for (let i = 0; i < array.length; i++) {
-        if (array[i].length < teststring.length)
-            teststring = array[i]
-    }
-    return teststring;
 }
 
 
