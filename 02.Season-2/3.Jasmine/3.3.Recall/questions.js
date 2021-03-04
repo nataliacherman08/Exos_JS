@@ -34,8 +34,8 @@ let removeNullElements = (array) => {
     /*let filtered = array.filter((e) => {
         return e != null;
     });
-
     return filtered;*/
+
     let filtered = array.filter(e => e != null);
     return filtered;
 }
@@ -43,10 +43,12 @@ let removeNullElements = (array) => {
 
 //It removes null and false values from an array
 let removeNullAndFalseElements = (array) => {
-    return array.filter((e) => {
+    /*return array.filter((e) => {
         //Return only elements that are equal to 0 or the element itself
         return e === 0 || e;
-    });
+    });*/
+
+    return array.filter(e => e === 0 || e);
 }
 
 
@@ -54,7 +56,10 @@ let removeNullAndFalseElements = (array) => {
 let reverseWordsInArray = (array) => {
     let arr = []
     array.forEach(e => {
-        arr.push(e.split("").reverse().join(""));
+        arr.push(
+            e.split("")//We split elements
+                .reverse()//We reverse elements
+                .join(""));//And rejoin elements
     })
     return arr;
 }
@@ -68,7 +73,6 @@ let everyPossiblePair = (array) => {
             results.push(array[i] + ' ' + array[j]);
         }
     }
-
     console.log(results);*/
 }
 
