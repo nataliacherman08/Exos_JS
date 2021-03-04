@@ -107,6 +107,9 @@ let sortByLastLetter = (array) => {
 
 //It gets the first half of a string
 let getFirstHalf = (string) => {
+    //.substr(début[, longueur])
+    //The substr() method returns a portion of the string, starting at the 
+    //specified index and extending for a given number of characters afterwards.
     return string.substr(0, Math.round(string.length / 2));
 }
 
