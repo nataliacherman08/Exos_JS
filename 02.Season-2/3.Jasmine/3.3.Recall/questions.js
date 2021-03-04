@@ -35,9 +35,15 @@ let removeNullElements = (array) => {
     return filtered;
 }
 
+
 //It removes null and false values from an array
 let removeNullAndFalseElements = (array) => {
+    return array.filter((e) => {
+        //Return only elements that are equal to 0 or the element itself
+        return e === 0 || e;
+    });
 }
+
 
 //It reverses the letters of each element in an array
 let reverseWordsInArray = (array) => {
