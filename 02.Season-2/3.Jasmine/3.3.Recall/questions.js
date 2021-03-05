@@ -67,13 +67,13 @@ let reverseWordsInArray = (array) => {
 
 //6) It makes every possible pairing of students
 let everyPossiblePair = (array) => {
-    /*let results = [];
+    /*let pairs = [];
     for (let i = 0; i < array.length - 1; i++) {
         for (let j = i + 1; j < array.length; j++) {
-            results.push(array[i] + ' ' + array[j]);
+            pairs.push(array[i] + ' ' + array[j]);
         }
     }
-    console.log(results);*/
+    console.log(pairs);*/
 }
 
 
