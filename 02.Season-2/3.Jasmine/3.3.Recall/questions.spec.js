@@ -126,6 +126,7 @@ describe('javascript-Recall', () => {
         expect(result2).toEqual(['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']);
     });
 
+
     it('swaps keys and values in an object', () => {
         let result = swapKeysAndValues({
             'Frodo': 'Baggins',

@@ -214,15 +214,30 @@ let convertArrayToObject = (array) => {
 
 //21) It gets all letters in an array of words
 let getAllLetters = (array) => {
+    /*let string = array.join("");
+    console.log(string);
+
+    let arrayOfLetters = string.split("").map(x => x).sort();
+    console.log(arrayOfLetters);
+
+    let deleteDouble = [arrayofLetters.set()];
+    console.log(deleteDouble);
+
+    return deleteDouble;*/
+
+    let string = array.join("");
+    let arrayOfLetters = string.split("").map(x => x).sort();
+    let deleteDouble = [...new Set(arrayOfLetters)];
+    return deleteDouble;
 }
 
 
-//22) 
+//22) It swaps keys and values in an object
 let swapKeysAndValues = (object) => {
 }
 
 
-//23) 
+//23) It adds together keys and values
 let sumKeysAndValues = (object) => {
 }
 
