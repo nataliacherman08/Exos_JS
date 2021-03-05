@@ -241,31 +241,32 @@ let getDomainName = (string) => {
 }
 
 
-//It titleizes a string
+//28) It titleizes a string
 let titleize = (string) => {
 }
 
 
-//It checks a string for special characters
+//29) It checks a string for special characters
 let checkForSpecialCharacters = (string) => {
     let format = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
     return format.test(string);
 }
 
 
-//It finds the square root of a number
+//30) It finds the square root of a number
 let squareRoot = (number) => {
     return Math.sqrt(number);
 }
 
 
-//It finds the factorial of a number
+//31) It finds the factorial of a number
 let factorial = (number) => {
-    let f = 1;
+    /*let f = 1;
     for (let i = 1; i <= number; i++) {
         f = f * i
     }
-    return f;
+    return f;*/
+    return (number != 1) ? number * factorial(number - 1) : 1;
 }
 
 
