@@ -229,11 +229,26 @@ let getAllLetters = (array) => {
 
 //22) It swaps keys and values in an object
 let swapKeysAndValues = (object) => {
+    let newObject = {};
+    Object.entries(object).forEach(entry => {
+        let key = entry[0];
+        let value = entry[1];
+        newObject[value] = key;
+    });
+    return newObject;
 }
 
 
 //23) It adds together keys and values
 let sumKeysAndValues = (object) => {
+    let total = 0;
+    let t = Object.values(object).reduce((a, b) => a + b);
+    let b = Object.keys(object).map(x => parseInt(x)).reduce((a, b) => {
+        return a + b;
+    });
+
+    total = t + b;
+    return total;
 }
 
 
@@ -252,17 +267,9 @@ let roundUp = (number) => {
 
 //26) It formats a date nicely
 let formatDateNicely = (date) => {
-    let niceFormatDate = date.toLocaleString(/*"fr-Fr"*/"en-GB", {
-        month: "numeric",
-        day: "numeric",
-        year: "numeric",
-    });
-    console.log(niceFormatDate);
-    return niceFormatDate;
-
-    /*let event = new Date('2015-03-04');
-    console.log(event);
-    return (event.toLocaleString('fr-FR'));*/
+    let format = date.toLocaleDateString("fr-fr");
+    console.log(format)
+    return format;
 }
 
 
