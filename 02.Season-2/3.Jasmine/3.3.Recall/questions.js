@@ -214,20 +214,15 @@ let convertArrayToObject = (array) => {
 
 //21) It gets all letters in an array of words
 let getAllLetters = (array) => {
-    /*let string = array.join("");
+    //It transforms array in string
+    let string = array.join("");
     console.log(string);
-
+    //It transforms the string in an array with letters
     let arrayOfLetters = string.split("").map(x => x).sort();
     console.log(arrayOfLetters);
-
-    let deleteDouble = [arrayofLetters.set()];
-    console.log(deleteDouble);
-
-    return deleteDouble;*/
-
-    let string = array.join("");
-    let arrayOfLetters = string.split("").map(x => x).sort();
+    //It deletes doubles of letters
     let deleteDouble = [...new Set(arrayOfLetters)];
+    console.log(deleteDouble)
     return deleteDouble;
 }
 
