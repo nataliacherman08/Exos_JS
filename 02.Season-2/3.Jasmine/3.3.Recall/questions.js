@@ -134,11 +134,32 @@ let numberOfPalindromes = (array) => {
 
 //13) It returns the shortest word in an array
 let shortestWord = (array) => {
+    /*let testString = "tttttttttttttttttttttt";
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].length < testString.length)
+            testString = array[i];
+    }
+    return testString;*/
+
+    /*let short = array.reduce((a, b) => {
+        return a.length <= b.length ? a : b;
+    })
+    return short;*/
+
+    return array.reduce((a, b) => a.length <= b.length ? a : b);
 }
 
 
 //14) It returns the longest word in an array
 let longestWord = (array) => {
+    /*let testString = "";
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].length > testString.length)
+            testString = array[i];
+    }
+    return testString;*/
+
+    return array.reduce((a, b) => a.length >= b.length ? a : b);
 }
 
 
