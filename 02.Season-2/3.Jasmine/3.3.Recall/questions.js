@@ -270,17 +270,20 @@ let factorial = (number) => {
 }
 
 
-//It finds all possible anagrams of a word
+//32) It finds all possible anagrams of a word
 let findAnagrams = (string) => {
 
 }
 
-//It converts Fahrenheit to Celsius rounding to the nearest integer
+//33) It converts Fahrenheit to Celsius rounding to the nearest integer
 let convertToCelsius = (number) => {
     return Math.round((number - 32) * 5 / 9);
+
+    /*const celsiusToFahrenheit = celsius => celsius * 9 / 5 + 32;
+    const fahrenheitToCelsius = fahrenheit => (fahrenheit - 32) * 5 / 9;*/
 }
 
-//It changes each letter of an array into its position in the alphabet
+//34) It changes each letter of an array into its position in the alphabet
 let letterPosition = (array) => {
     return array.map((e) => e.toUpperCase().charCodeAt(0) - 64);
 }
