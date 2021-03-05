@@ -182,6 +182,12 @@ let getElementsUntilGreaterThanFive = (array) => {
 
 //20) It converts an array to an object
 let convertArrayToObject = (array) => {
+    let arr = [];
+    for (let i = 0; i < array.length; i += 2) {
+        arr.push([array[i], array[i + 1]]);
+    };
+    let object = Object.fromEntries(arr);
+    return object;
 }
 
 
