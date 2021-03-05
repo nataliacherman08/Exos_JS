@@ -268,14 +268,17 @@ let roundUp = (number) => {
 //26) It formats a date nicely
 let formatDateNicely = (date) => {
     let formatDate = date.toLocaleDateString("fr-fr");
-    console.log(formatDate)
+    console.log(formatDate);
     return formatDate;
 }
 
 
 //27 Gets the domain name from an email address
 let getDomainName = (string) => {
-    return 'Write your method here';
+    let domain = string.replace(/.*@/, "");
+    let domainName = domain.replace('.com', '');
+    console.log(domainName);
+    return domainName;
 }
 
 
