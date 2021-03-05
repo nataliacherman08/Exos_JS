@@ -267,9 +267,9 @@ let roundUp = (number) => {
 
 //26) It formats a date nicely
 let formatDateNicely = (date) => {
-    let format = date.toLocaleDateString("fr-fr");
-    console.log(format)
-    return format;
+    let formatDate = date.toLocaleDateString("fr-fr");
+    console.log(formatDate)
+    return formatDate;
 }
 
 
