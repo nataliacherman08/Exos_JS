@@ -191,33 +191,35 @@ let convertArrayToObject = (array) => {
 }
 
 
-//It gets all letters in an array of words
+//21) It gets all letters in an array of words
 let getAllLetters = (array) => {
 }
 
+
+//22) 
 let swapKeysAndValues = (object) => {
-    return 'Write your method here';
 }
 
+
+//23) 
 let sumKeysAndValues = (object) => {
-    return 'Write your method here';
 }
 
 
-//It removes capital letters from a string
+//24) It removes capital letters from a string
 let removeCapitals = (string) => {
-    let lowercaseString = string.replace(/[A-Z]/g, '');
+    let lowercaseString = string.replace(/[A-Z]/g, "");
     return lowercaseString;
 }
 
 
-//It rounds up a number
+//25) It rounds up a number
 let roundUp = (number) => {
     return Math.ceil(number);
 }
 
 
-//It formats a date nicely
+//26) It formats a date nicely
 let formatDateNicely = (date) => {
     let niceFormatDate = date.toLocaleString("fr-Fr", {
         month: "numeric",
